@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de Textos</title>
+    <title>Outras formatações</title>
 </head>
 <body>
-    <h1>Principais Formatações</h1>
-    <h2>Negrito / Destaque</h2>
-    <p>Nesta frase temos um  <b>termo em negrito</b> utilizando a tag &lt;b&gt; (não semântica).</p>
-    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+    <h1>Outras formatações</h1>
+    <h2>Código-Fonte e Pré-Formatações</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito na linguagem Javacript.</p>
+    <pre>
+        <code>
+num = int(input("Digite um número"))
+if num % 2 == 0:
+    print(f'0 número {num} é PAR')
+else:
+    print(f'O número {num} é Ímpar')
+print('Fim do programa')
+        </code>
+    </pre>
 
-    <h2>Itálico / Ênfase</h2>
-    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
-    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <h2>Citações simples</h2>
+    <p>Como diria o velho deitado: <q>o sono que não se vê, é o mais mortífero.</q></p>
+    <h2>Citações Completas</h2>
+    <p>Segundo Geralt de Rivia, bruxo em tempo integral:
+       <blockquote cite="https://www.pensador.com/frase/MjU4MTc4NQ/">
+        Um mal é um mal. Menor, maior, médio, tanto faz… As proporções são convencionadas e as fronteiras, imprecisas. Não sou um santo eremita e não pratiquei apenas o bem ao longo de minha vida. Mas, se me couber escolher entre dois males, prefiro abster-me por completo da escolha.
+       </blockquote> 
+       <h2>Abreviações</h2>
+       <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> 
+       <h2>Texto... <bdo dir="rtl">invertido</bdo>?!</h2>
+       <p><bdo dir="ltr">Socorram-me, subi no ônibus em Marrocos</bdo></p>
+       <p><bdo dir="rtl">Socorram-me, subi no ônibus em Marrocos</bdo></p>
 
-    <h2>Texto marcado</h2>
-    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p>
-    <p>Aqui temos <mark style="background-color: cyan">um texto marcado</mark>, utilizando a tag &lt;mark&gt;, mas também utilizando um style para alterar a cor da marcação única.</p>
-
-    <h2>Texto grande e pequeno</h2>
-    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
-
-    <h2>Texto deletado</h2>
-    <p>Podemos marcar um <del>texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
-    <h2>Texto Inserido</h2>
-    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois</p>
-    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica).</p>
-    <h2>Texto sobrescrito</h2>
-    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
-    <h2>Texto subscrito</h2>
-    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+       <p>A tag &lt;bdo&gt; faz isso acima, basicamente.</p>
+    </p>
 </body>
 </html>
