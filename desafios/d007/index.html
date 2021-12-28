@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo essa imagem completa? Experimenta redimensionar a tela para ver um truque acontecer!</p>
+    <picture>
+        <source media="(max-width:790px )" srcset="imagens/paisagem-p_265x489.png" type="image/png">
+        <source media="(max-width:1250px )" srcset="imagens/paisagem-m_740x489.png" type="image/png">
+        <img src="imagens/paisagem-g_1200x489.png" alt="imagem_flexivel_grande">
+    </picture>
+    <p>Legal né? Eu consigo fazer isso utilizando as tags &lt;picture&gt;, tag &lt;source&gt; e a tag &lt;img&gt;. Se quiser ver direitinho como, da uma olhada no código dessa página!</p>
+</body>
+</html>
